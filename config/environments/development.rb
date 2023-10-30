@@ -72,8 +72,8 @@ Rails.application.configure do
   # value are base on the https://anchor.dev/stolt45/services/rails-demo
   # service settings.
 
-  config.auto_cert.allow_identifiers = %w[rails-demo.lcl.host rails-demo.localhost]
-  config.auto_cert.directory_url = "https://anchor.dev/org/localhost/x509/ca/acme"
+  config.auto_cert.allow_identifiers = ENV.fetch('RAILS_HOSTNAMES').split
+  config.auto_cert.directory_url = ENV.fetch('ACME_DIRECTORY_URL')
 
   # Track cached account keys and certificates by the External Account
   # Binding KID.
