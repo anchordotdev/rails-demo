@@ -1,5 +1,14 @@
-<h2>Hello from Anchor<h2>
+<h2>Hello from rails-demo frontend</h2>
     <p>
     It is currently <%= Time.now %>
     </p>
-
+    <% if backend? %>
+      <p><br>  
+      <h3>Backend setup... </h3>
+      pinging <a href="<%= @backend_url %>"><%= @backend_url %></a> <br>
+      response: <br>
+      <%= @backend_resp %>
+      </p>
+    <% else %>
+      <p><br><br> No backend service detected, to setup a backend service follow this example:<br> <a href="https://anchor.dev/docs/examples/local-https/app-rails">https://anchor.dev/docs/examples/local-https/app-rails</a> </p>
+    <% end %>
