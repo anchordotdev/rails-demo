@@ -67,29 +67,6 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  config.hosts << "rails-demo.lcl.host"
 
-  # Automatic ACME certificate provisioning a.k.a. auto-cert settings. The
-  # value are base on the https://anchor.dev/stolt45/services/rails-demo
-  # service settings.
-
-  config.auto_cert.allow_identifiers = ENV.fetch('RAILS_HOSTNAMES').split
-  config.auto_cert.directory_url = ENV.fetch('ACME_DIRECTORY_URL')
-
-  # Track cached account keys and certificates by the External Account
-  # Binding KID.
-  config.auto_cert.contact = "name@email.com+#{ENV.fetch('ACME_KID')}"
-
-  # Load the External Account Binding KID and secret key from a custom
-  # source. By default, the values are loaded from the ACME_KID and
-  # ACME_HMAC_KEY environment variables.
-  #
-  # You may decide to store the values in a credentials file or other secure
-  # storage. In that case set the values explicitly on the
-  # `external_account_binding`. Remember to change the `contact` value
-  # above to also pull the KID from the secure storage.
-  #
-  # config.auto_cert.external_account_binding = {
-  #   kid: Rails.application.credentials.acme.kid!,
-  #   hmac_key: Rails.application.credentials.acme.hmac_key!
-  # }
 end

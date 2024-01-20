@@ -45,18 +45,4 @@ plugin :tmp_restart
 # Integrate with AutoCert
 plugin :auto_cert
 
-# Configure the plugin - this needs to be after the `plugin` line above
-#
-# The `auto_cert_name` needs to be the same as the value set in the
-# `config/initializers/auto_cert.rb` file for the `config.auto_cert.name`.
-# value.
-#
-auto_cert_name Rails.configuration.auto_cert&.name
-
-# Bind to the port that the AutoCert plugin will use to provision
-auto_cert_port ENV.fetch('HTTPS_PORT', 44386)
-
-# How often to check if the certificate needs to be renewed
-# auto_cert_check_ever 1.hour
-
 
