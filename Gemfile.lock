@@ -127,6 +127,8 @@ GEM
     nio4r (2.7.0)
     nokogiri (1.15.5-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.15.5-x86_64-linux)
+      racc (~> 1.4)
     pstore (0.1.3)
     puma (6.4.2)
       nio4r (~> 2.0)
@@ -136,7 +138,7 @@ GEM
       puma (~> 6.4)
       sinatra (~> 3.1)
     racc (1.7.3)
-    rack (2.2.8)
+    rack (2.2.8.1)
     rack-protection (3.2.0)
       base64 (>= 0.1.0)
       rack (~> 2.2, >= 2.2.4)
@@ -185,6 +187,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.9-x86_64-darwin)
+    sqlite3 (1.6.9-x86_64-linux)
     thor (1.3.0)
     tilt (2.3.0)
     timeout (0.4.1)
@@ -207,6 +210,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   anchor-pki (~> 0.7.0)
