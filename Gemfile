@@ -33,4 +33,4 @@ group :development do
 end
 
 # Anchor specific Gems
-gem "anchor-pki", "~> 0.7.0"
+gem "anchor-pki", "~> 0.8.0"
