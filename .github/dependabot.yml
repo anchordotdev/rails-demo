@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    groups:
+      development:
+        dependency-type: development
+    schedule:
+      interval: "monthly"
+    reviewers:
+      - "benburkert"
+      - "danbernier"
+      - "geemus"
