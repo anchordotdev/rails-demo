@@ -154,7 +154,7 @@ GEM
     psych (5.2.4)
       date
       stringio
-    puma (6.5.0)
+    puma (6.6.0)
       nio4r (~> 2.0)
     puma-acme (0.1.5)
       acme-client (~> 2.0.13)
@@ -259,7 +259,7 @@ DEPENDENCIES
   bootsnap
   dotenv-rails
   importmap-rails
-  puma (~> 6.5)
+  puma (~> 6.6)
   rails (~> 7.2.1)
   sprockets-rails
   sqlite3 (~> 2.2)
